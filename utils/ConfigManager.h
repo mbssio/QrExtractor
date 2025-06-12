@@ -3,16 +3,19 @@
 #include <string>
 
 class ConfigManager {
-    public:
-        ConfigManager(const std::string& filename);
-        bool load();
-        void createDefault();
+public:
+    ConfigManager(const std::string &filename);
 
-        std::string getInputDir() const;
-        std::string getOutputDir() const;
+    bool load();
 
-    private:
-        std::string configFile;
-        std::string inputDir;
-        std::string outputDir;
+    void createDefault();
+
+    std::string getInputDir() const;
+
+    std::string getOutputDir() const;
+
+private:
+    std::string configFile;
+    std::string inputDir;
+    std::string outputDir;
 };

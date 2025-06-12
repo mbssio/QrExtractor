@@ -3,10 +3,11 @@
 #include <string>
 
 class MuPDFConverter {
-    public:
-        explicit MuPDFConverter(const std::string& mutoolPath);
-        bool convertFirstPage(const std::string& inputPath, const std::string& outputPath);
+public:
+    explicit MuPDFConverter(const std::string &mutoolPath);
 
-    private:
-        std::string mutool;
+    bool convertFirstPage(const std::string &inputPath, const std::string &outputPath);
+
+private:
+    std::string mutool;
 };
