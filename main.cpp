@@ -1,9 +1,9 @@
 #include <iostream>
 #include <filesystem>
 #include <limits>
-#include "utils/ConfigManager.h"
-#include "utils/MuPDFConverter.h"
-#include "utils/BWSExtractor.h"
+#include "include/ConfigManager.h"
+#include "include/MuPDFConverter.h"
+#include "include/BWSExtractor.h"
 
 namespace fs = std::filesystem;
 

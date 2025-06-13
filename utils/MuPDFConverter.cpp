@@ -1,4 +1,4 @@
-#include "MuPDFConverter.h"
+#include "../include/MuPDFConverter.h"
 #include <iostream>
 #include <filesystem>
 #include <cstdlib>

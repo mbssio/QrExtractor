@@ -1,4 +1,4 @@
-#include "BWSExtractor.h"
+#include "../include/BWSExtractor.h"
 #include <regex>
 
 std::optional<std::string> BWSExtractor::extract(const std::string &filename) {

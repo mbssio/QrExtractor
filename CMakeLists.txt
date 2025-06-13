@@ -19,9 +19,9 @@ set(SOURCES
 )
 
 set(HEADERS
-        utils/ConfigManager.h
-        utils/MuPDFConverter.h
-        utils/BWSExtractor.h
+        include/ConfigManager.h
+        include/MuPDFConverter.h
+        include/BWSExtractor.h
 )
 
 add_executable(QrExtractor ${SOURCES} ${HEADERS})
@@ -31,7 +31,7 @@ source_group("Header Files" FILES ${HEADERS})
 source_group("Source Files" FILES ${SOURCES})
 
 # === External files ===
-set(MUTOOL_DIR ${CMAKE_SOURCE_DIR}/mutool)
+set(MUTOOL_DIR ${CMAKE_SOURCE_DIR}/mupdf)
 set(MUTOOL_EXE ${MUTOOL_DIR}/mutool.exe)
 
 # Manually include DLLs you know mutool.exe needs (adjust paths if needed)
